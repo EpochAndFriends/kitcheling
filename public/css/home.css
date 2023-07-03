@@ -1,0 +1,198 @@
+/* HEADER */
+
+body {
+  background-image: url('../img/bg-body.png');
+  background-repeat: repeat;
+}
+
+.home_header {
+  text-align: center;
+}
+
+.home_header_logo {
+  margin: 15px auto 30px;
+  width: 180px;
+}
+
+.home_header_img {
+  border: solid 2px var(--colorGris);
+  border-radius: 50%;
+  width: 100%;
+}
+
+.home_header_a--bars {
+  background-color: var(--colorGris);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 30px;
+  display: inline-block;
+  font-size: 2.5rem;
+  border-radius: 5px;
+}
+
+.nav_home_button ul li {
+  background-color: var(--colorGris);
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.nav_home_button ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* MAIN */
+.section_destacado {
+  display: none;
+}
+
+.section_comidas {
+  margin-top: 30px;
+}
+
+.comida {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.comida_imagen {
+  position: relative;
+}
+
+.comida_imagen img {
+  display: block;
+  width: 100%;
+}
+
+.comida_ampliar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 1;
+}
+
+
+.comida .comida_titulo {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.comida .comida_descripcion {
+  margin-bottom: 10px;
+}
+
+.comida_vermas {
+  background-color: var(--colorGris);
+  display: inline-block;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/* FOOTER */
+.footer-nav ul li {
+  background-color: var(--colorRojo);
+  width: 100%;
+  margin-bottom: 2px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer-nav ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .home_header_menu .home_header_a--bars {
+    display: none;
+  }
+
+  .nav_home_button ul li {
+    width: 15%;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .nav_home_button ul li:last-child {
+    margin-right: 0;
+  }
+
+  /* MAIN */
+  .section_destacado {
+    display: block;
+  }
+
+  .section_destacado img {
+    width: 100%;
+  }
+
+  .section_comidas {
+    overflow: hidden;
+  }
+
+  .comida {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+
+  .comida:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* HEADER */
+  .nav_home_button ul li {
+    font-size: 1rem;
+    height: 50px;
+    padding: 15px;
+  }
+
+  /* MAIN */
+  .comida {
+    width: 32%;
+  }
+
+  .comida:nth-child(even) {
+    margin-right: 2%;
+  }
+
+  .comida:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    background-color: var(--colorRojo);
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .footer-nav ul li {
+    display: inline;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    padding: 0 10px;
+    border-right: solid 1px #ffff;
+  }
+
+  .footer-nav ul li:last-child {
+    border-right: none;
+  }
+}
